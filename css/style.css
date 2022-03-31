@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'Lobster', cursive;
+}
+.garbage{
+    width: 40px;
+    margin-right:0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    margin:0 auto;
+    border: black 3px solid;
+    border-radius: 12px;
+    background-color: rgb(16, 136, 136);
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding:5px 10px;
+    border-bottom: 3px solid black;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.todo_done{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+h1{
+    font-size: 60px;
+    padding:8px;
+    color:white;;
+}
+.list p{
+    transition-property:color;
+    transition-duration:1s;
+    font-size: 30px;
+    color:rgb(170, 202, 24);
+    max-width:80% ;
+    word-wrap: break-word;
+    flex-grow: 1;
+}
+.list p:hover{
+    color:aquamarine;
+}
+.garb{
+    transition-property: background-color,border-color;
+    transition-duration: 1s,1s;
+    background-color:red;
+    border:double 2px aquamarine;
+    border-radius: 9%;
+}
+.footer{
+    display:flex ;
+    justify-content: space-evenly;
+}
+.garb:hover{
+    background-color: aquamarine;
+    border:solid 2px red;
+}
+.btn{
+    transition-property: background-color,border-color,color;
+    transition-duration: 1s,1s,1s;
+    color:black;
+    font-size: 20px;
+    background-color: aquamarine;
+    border:3px red double ;
+    border-radius: 8px;
+    padding:10px 5px 10px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    color:white;
+    background-color: rgba( 1,256,46,0.9);
+    border:3px rgb(11, 105, 74) solid;
+}
+input{
+    width:100%;
+    padding:10px;
+    outline: none;
+    font-size: 20px;
+}
+.todos{
+    overflow-y: scroll;
+    max-height:60vh;
+}
+
+
+ /*
+ _________________ 
+ |have a nice day|   ~(^o^)~
+ ----------------- 
+ */
+
